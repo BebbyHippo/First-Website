@@ -25,9 +25,9 @@
         <h3>Prime destinations for fledgling adventurers</h3>
         <ul>
           <!-- Simplified Home link -->
-          <li><a href="Sword Coast Travel Guide(Homepage).html#About">Home</a></li>
+          <li><a href="index.html" id="active">Home</a></li>
           <li><a href="Sword Coast Travel Guide(Towns and Cities).html">Towns and Cities</a></li>
-          <li><a href="Sword Coast Travel Guide(Forests and Woods).html">Forests and Woods</a></li>
+          <li><a href="Sword Coast Travel Guide(Natural Beauty).html">Natural Beauty</a></li>
           <li><a href="Sword Coast Travel Guide(Ruins and History).html">Ruins and History</a></li>
         </ul>
       </nav>
@@ -48,10 +48,10 @@
     <section id="Maps">
       <h3>Maps:</h3>
       <a href="https://media.wizards.com/2015/images/dnd/resources/Sword-Coast-Map_HighRes.jpg" target="_blank">
-        <p>A map detailing the Sword Coast as well as the surrounding area</p>
+        <p>Click here for a map detailing the Sword Coast as well as the surrounding area</p>
       </a>
       <a href="https://www.aidedd.org/atlas/index.php?map=R&l=1" target="_blank">
-        <p>An interactive map detailing the Sword Coast as well as the surrounding area</p>
+        <p>Click here for an interactive map detailing the Sword Coast as well as the surrounding area</p>
       </a>
     </section>
     <!-- Maps End -->
@@ -100,7 +100,6 @@
           <label for="level">Level:</label>
           <select id="level" name="level" required>
             <option value="">Please Choose</option>
-            <!-- Simplified level options -->
             ${[...Array(20).keys()].map(i => `<option value="${i + 1}">${i + 1}</option>`).join('')}
           </select>
 
