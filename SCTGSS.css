@@ -1,7 +1,8 @@
 /* Style Sheet */
 body {
-    background-color: #ab2330;
+    background-color: #004225; /* Updated background color */
     font-family: 'Times New Roman', Times, serif;
+    color: #F5F5DC; /* Default text color for body */
 }
 
 main {
@@ -11,7 +12,7 @@ main {
 
 header {
     text-align: center;
-    color: #FFD700;
+    color: #FFB000;
     text-shadow: 2px 2px 4px black;
 }
 
@@ -24,19 +25,20 @@ h1 {
 h2 {
     padding: 0px;
     margin: 5px;
-    color: #FFD700;
+    color: #FFB000;
     text-shadow: 2px 2px 4px black;
 }
 
 h3 {
     padding: 0px;
     margin: 5px;
-    color: #FFD700;
+    color: #FFB000;
     text-shadow: 2px 2px 4px black;
 }
 
 p {
     margin: 0px;
+    color: #F5F5DC; /* Text color for paragraphs */
 }
 
 nav {
@@ -48,7 +50,6 @@ nav {
     background-color: #002244;
     padding: 0px;
     margin: 0px;
-    /* font-size: 20px; */
     text-align: center;
 }
 
@@ -63,18 +64,20 @@ nav li {
     display: inline;
 }
 
-/* nav a {
-} */
-
 nav li a {
-    color: white;
+    color: #F5F5DC; /* Text color for navigation links */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.active {
-    color: black;
+ul {
+    list-style-type: none;
+    color: #F5F5DC; /* Text color for list items */
+}
+
+#active {
+    color: #FFCF9D;
 }
 
 /* this adjusts the website to different screen sizes */
@@ -95,7 +98,7 @@ nav li a {
 
 /* Style for the dropdown button */
 .dropbtn {
-    background-color: #4CAF50; /* Example background color */
+    background-color: #4CAF50;
     color: white;
     padding: 10px;
     font-size: 16px;
@@ -136,3 +139,11 @@ nav li a {
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
+
+/* links styling */
+#Maps a {
+    color: #F5F5DC; /* Text color for map links */
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
