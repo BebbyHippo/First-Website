@@ -3,6 +3,7 @@ body {
     background-color: #004225; /* Updated background color */
     font-family: 'Times New Roman', Times, serif;
     color: #F5F5DC; /* Default text color for body */
+    line-height: 1.6; /*adjusting line head for text for accessibility purposes*/
 }
 
 main {
@@ -78,6 +79,7 @@ ul {
 
 #active {
     color: #FFCF9D;
+    font-weight: bold;
 }
 
 /* this adjusts the website to different screen sizes */
