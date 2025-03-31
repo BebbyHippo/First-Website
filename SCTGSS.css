@@ -1,114 +1,146 @@
-/* Style Sheet */
-body {
-    background-color: #004225; /* Updated background color */
-    font-family: 'Times New Roman', Times, serif;
-    color: #F5F5DC; /* Default text color for body */
-    line-height: 1.6; /*adjusting line head for text for accessibility purposes*/
+/* General styling for the entire page */
+html, body {
+    height: 100%; /* Ensures the page takes up the full viewport height */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Enables flexbox for layout */
+    flex-direction: column; /* Stacks elements vertically */
+    background-color: #004225; /* Background color for the page */
+    font-family: 'Times New Roman', Times, serif; /* Font for the entire page */
+    color: #F5F5DC; /* Default text color */
+    line-height: 1.6; /* Improves text readability */
 }
 
+/* Main content styling */
 main {
     padding: 10px;
     margin: 10px;
 }
 
+/* Header styling */
 header {
     text-align: center;
-    color: #FFB000;
-    text-shadow: 2px 2px 4px black;
+    color: #FFB000; /* Gold color for header text */
+    text-shadow: 2px 2px 4px black; /* Adds shadow for better visibility */
 }
 
 h1 {
-    font-size: 4em;
-    padding: 0px;
-    margin: 0px;
+    font-size: 4em; /* Large font size for main heading */
+    padding: 0;
+    margin: 0;
 }
 
 h2 {
-    padding: 0px;
+    padding: 0;
     margin: 5px;
-    color: #FFB000;
+    color: #FFB000; /* Gold color for subheadings */
     text-shadow: 2px 2px 4px black;
 }
 
 h3 {
-    padding: 0px;
+    padding: 0;
     margin: 5px;
     color: #FFB000;
     text-shadow: 2px 2px 4px black;
 }
 
+/* Paragraph styling */
 p {
-    margin: 0px;
-    color: #F5F5DC; /* Text color for paragraphs */
+    margin: 0;
+    color: #F5F5DC; /* Default text color for paragraphs */
 }
 
+/* Navigation bar styling */
 nav {
-    height: auto;
-    position: relative;
     left: auto;
     outline: none;
-    border: 10px solid goldenrod;
-    background-color: #002244;
-    padding: 0px;
-    margin: 0px;
+    border: 10px solid goldenrod; /* Gold border for navigation */
+    background-color: #002244; /* Navy blue background */
+    padding: 0;
+    margin: 0;
     text-align: center;
+    z-index: 1000; /* Ensures navigation stays on top */
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 5;
+    list-style-type: none; /* Removes bullet points */
+    margin: 5px;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden; /* Prevents overflow issues */
 }
 
 nav li {
-    display: inline;
+    display: inline; /* Displays navigation items inline */
 }
 
 nav li a {
     color: #F5F5DC; /* Text color for navigation links */
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: none; /* Removes underline */
 }
 
 ul {
-    list-style-type: none;
-    color: #F5F5DC; /* Text color for list items */
+    list-style-type:disc; /* Removes bullet points */
+    color: #F5F5DC; /* Default text color for list items */
 }
 
+/* Active navigation link styling */
 #active {
-    color: #FFCF9D;
+    color: #FFCF9D; /* Highlighted color for active link */
     font-weight: bold;
 }
 
-/* this adjusts the website to different screen sizes */
+/* Responsive design for smaller screens */
 @media screen and (max-width: 600px) {
-    /* set up a grid layout */
     .container {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        grid-gap: 20px;
+        display: grid; /* Enables grid layout */
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* Three equal columns */
+        grid-gap: 20px; /* Adds spacing between grid items */
     }
 
-    /* set images to the size of the container */
     img {
-        width: 100%;
+        width: 100%; /* Makes images responsive */
         height: auto;
     }
 }
 
-/* Style for the dropdown button */
+/* specific styling for homepage 'About' section */
+
+#About {
+    text-indent: 10px;
+}
+
+#About p {
+    text-indent: 10px;
+}
+
+/* specific styling for homepage 'Maps' section */
+
+#Maps {
+    text-indent: 10px;
+}
+
+#Maps p{
+    text-indent: 10px;
+}
+
+/* specific styling for homepage 'Sign-Up section */
+
+#Sign-Up h2 {
+    text-indent: 10px;
+}
+
+/* Dropdown button styling */
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
     padding: 10px;
     font-size: 16px;
     border: none;
-    cursor: pointer;
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
-/* Container for the dropdown content */
+/* Dropdown container styling */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -116,36 +148,103 @@ ul {
 
 /* Hidden dropdown content */
 .dropdown-content {
-    display: none;
+    display: none; /* Hidden by default */
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light background */
     min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+    z-index: 1; /* Ensures dropdown appears above other elements */
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
+    color: black; /* Black text color */
     padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+    text-decoration: none; /* Removes underline */
+    display: block; /* Makes links block-level elements */
 }
 
-/* Show the dropdown content on hover */
+/* Show dropdown content on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Change link color on hover */
+/* Change link background color on hover */
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; /* Light grey background */
 }
 
-/* links styling */
+/* Map links styling */
 #Maps a {
     color: #F5F5DC; /* Text color for map links */
     padding: 14px 16px;
     text-decoration: none;
 }
 
+/* "Back to Top" button styling */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* 20px from the bottom */
+    right: 30px; /* 30px from the right */
+    z-index: 99; /* Ensures it appears above other elements */
+    border: none; /* Removes border */
+    outline: none; /* Removes outline */
+    background-color: #002244; /* Navy blue background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 15px; /* Adds padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Larger font size */
+}
+
+#myBtn:hover {
+    background-color: grey; /* Dark grey background on hover */
+}
+
+/* Footer styling */
+footer {
+    text-align: center; /* Centers footer text */
+    color: #F5F5DC; /* Light text color */
+    padding: 10px; /* Adds padding */
+    margin-top: auto; /* Pushes footer to the bottom of the page */
+}
+
+/* Grid container for alternating text and images */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between rows and columns */
+    padding: 20px;
+}
+
+.grid-container section {
+    display: contents; /* Ensures proper alignment of text and images */
+}
+
+.grid-container .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.grid-container .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners for images */
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    flex: 1; /* Ensures the row stretches to fill available space */
+}

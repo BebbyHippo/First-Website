@@ -282,5 +282,14 @@ These changes should improve consistency, responsiveness, and overall appearance
 - [X] Remove duplicate or incorrect CSS tag
 - [] Fix inconsistent alt text for images
 - [X] Standadise image filenames
-- [] Improve header consistency
-- [] Ensure closing tags are present
+- [X] Improve header consistency
+- [X] Ensure closing tags are present
+
+### Ruins and History
+
+- [X] lange
+- [X] metadata
+- [X] no open section for closed section 
+- [] fix alt descriptions
+- [] lower case image files names
+- [X] metadata page titles
