@@ -6,8 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="quiz.css">
-        <link rel="javascript" href="quiz.js">
+        <link rel="stylesheet" href="SCTGSS.css">
+
     <title>DnD Quiz</title>
 </head>
 
@@ -16,17 +16,207 @@
 <!-- main body start -->
 
 <body>
-    <ul id="menu">
-        <li class="menu-item"><a href="index.html">Home</a></li>
-        <li class="menu-item"><a href="bio.html">Bios</a></li>
-        <li class="menu-item" id="active"><a href="quiz.html">Quiz</a></li>
-    </ul>
-    <h1>Do you know your classes? (title subject to change)</h1>
 
-    <p>Here is a quiz about knowledge of which feats relate to which class</p>
+        <!-- Website Header Start -->
+        <header>
+            <h1>Welcome to The Sword Coast</h1>
+          </header>
+          <!-- Website Header End -->
+
+    <!-- Website Navigation Start -->
+      <nav>
+        <h3>Prime Destinations for Fledgling Adventurers</h3>
+        <ul>
+          <!-- Simplified Home link -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sword-coast-travel-guide(towns-and-cities).html">Towns and Cities</a></li>
+          <li><a href="sword-coast-travel-guide(natural-beauty).html">Natural Beauty</a></li>
+          <li><a href="sword-coast-travel-guide(ruins-and-history).html">Ruins and History</a></li>
+          <li><a href="quiz.html" id="active">Roll for Intelligence</a></li>
+        </ul>
+      </nav>
+    <!-- Website Navigation End -->
+
+<!-- quiz title -->
+    <h2>Are you smarter than a Barbarian?</h2>
+
+<!-- form begin -->
+        <form name="Quiz">
+
+<!-- enter name -->
+            <label for="name">Enter your name: </label><input type="text" name="name" size="30">
+
+<!-- question 1 -->
+            <p>According to the latest edition of the Player Hand Book released in 2024, how many classes exist within Dungeons and Dragons?</p>
+            <input type="radio" name="Classes" value="11">
+            <label for="11">11</label><br>
+            <input type="radio" name="Classes" value="12">
+            <label for="12">12</label><br>
+            <input type="radio" name="Classes" value="13">
+            <label for="13">13</label><br>
+
+<!-- question 2 -->
+            <p>When occupying an area, how much space does a small creature take up in foot and inches?</p>
+            <input type="radio" name="Space" value="2.5x2.5ft">
+            <label for="2.5x2.5ft">2.5x2.5ft</label><br>
+            <input type="radio" name="Space" value="5x5ft">
+            <label for="5x5ft">5x5ft</label><br>
+            <input type="radio" name="Space" value="10x10ft">
+            <label for="10x10ft">10x10ft</label><br>
+
+<!-- question 3 -->
+            <p>Which stat do rogues use as their spellcasting ability?</p>
+            <input type="radio" name="Rogues" value="Charisma">
+            <label for="Charisma">Charisma</label><br>
+            <input type="radio" name="Rogues" value="Wisdom">
+            <label for="Wisdom">Wisdom</label><br>
+            <input type="radio" name="Rogues" value="Intelligence">
+            <label for="Intelligence">Intelligence</label><br>
+
+<!-- question 4 -->
+            <p>How many categories are in the Good and Evil alignment chart?</p>
+            <input type="radio" name="Alignment" value="9">
+            <label for="9">9</label><br>
+            <input type="radio" name="Alignment" value="4">
+            <label for="4">4</label><br>
+            <input type="radio" name="Alignment" value="3">
+            <label for="3">3</label><br>
+
+<!-- question 5 -->
+            <p>Which two Abilities are Clerics proficient in for Saving Throws?</p>
+            <input type="radio" name="Clerics" value="Dexterity and Wisdom">
+            <label for="Dexterity and Wisdom">Dexterity and Wisdom</label><br>
+            <input type="radio" name="Clerics" value="Intelligence and Constitution">
+            <label for="Intelligence and Constitution">Intelligence and Constitution</label><br>
+            <input type="radio" name="Clerics" value="Wisdom and Charisma">
+            <label for="Wisdom and Charisma">Wisdom and Charisma</label><br>
+
+<!-- question 6 -->
+            <p>How Gold pieces to a Platinum coin?</p>
+            <input type="radio" name="Platinum" value="5">
+            <label for="5">5</label><br>
+            <input type="radio" name="Platinum" value="100">
+            <label for="100">100</label><br>
+            <input type="radio" name="Platinum" value="10">
+            <label for="10">10</label><br>
+
+<!-- question 7 -->
+            <p>What is the highest level of spell a player can cast through general means?</p>
+            <input type="radio" name="Spell" value="10">
+            <label for="10">10</label><br>
+            <input type="radio" name="Spell" value="9">
+            <label for="9">9</label><br>
+            <input type="radio" name="Spell" value="12">
+            <label for="12">12</label><br>
+
+<!-- question 8 -->
+            <p>Which of the following is not one of the core metallic dragons?</p>
+            <input type="radio" name="Dragon" value="Copper">
+            <label for="Copper">Copper</label><br>
+            <input type="radio" name="Dragon" value="Iron">
+            <label for="Iron">Iron</label><br>
+            <input type="radio" name="Dragon" value="Silver">
+            <label for="Silver">Silver</label><br>
+
+<!-- question 9 -->
+            <p>What is the name of the legendary Wizard known as the "Sage of Shadowdale"?</p>
+            <input type="radio" name="Wizard" value="Volothamp Geddarm">
+            <label for="Volothamp Geddarm">Volothamp Geddarm</label><br>
+            <input type="radio" name="Wizard" value="Drizzt Do'Urden">
+            <label for="Drizzt Do'Urden">Drizzt Do'Urden</label><br>
+            <input type="radio" name="Wizard" value="Elminster Aumar">
+            <label for="Elminster Aumar">Elminster Aumar</label><br>
+
+<!-- question 10 -->
+            <label for="Level">What is the maximum level a player character can usually achieve?</label><input type="number" name="Level" min="1" max="20" step="1"><br>
+
+            <!-- submit button -->
+        <button class="submit_form" type="button" onclick="checkAnswers();">Submit</button>
+
+        </form>
     
- </body>
+    <!-- Footer Start -->
+    <footer>
+        <p>© Ruby Garnet 2025</p>
+      </footer>
+      <!-- Footer End -->
+  
+      <!--Javascript Start-->
+      <script src="SCTGSS.js"></script>
+      <!-- Javascript End-->
 
+ </body>
 <!-- main body end -->
+
+<!-- javascript -->
+
+<script>
+// fininish function
+function finishFunction(){
+    alert ("Thank you for completing the quiz.")
+}
+
+// answer check function
+function checkAnswers(){
+// assign starting score to "0"
+    var score = 0;
+// assign the quiz elements to the quiz variable
+    quiz = document.forms.Quiz.elements;
+// assign the correct answer to the corresponding question
+    answer1 = quiz.Classes.value;
+// check answer for the first question
+    if (answer1 == "12"){
+// add 1 to the score if the user score is the correct answer
+        score = score + 1;
+    }
+
+    answer2 = quiz.Space.value;
+    if (answer2 == "5x5ft"){
+        score = score + 1;
+    }
+
+    answer3 = quiz.Rogues.value;
+    if (answer3 == "Intelligence"){
+        score = score + 1;
+    }
+
+    answer4 = quiz.Alignment.value;
+    if (answer4 == "9"){
+        score = score + 1;
+    }
+
+    answer5 = quiz.Clerics.value;
+    if (answer5 == "Wisdom and Charisma"){
+        score = score + 1;
+    }
+
+    answer6 = quiz.Platinum.value;
+    if (answer6 == "10"){
+        score = score + 1;
+    }
+
+    answer7 = quiz.Spell.value;
+    if (answer7 == "9"){
+        score = score + 1;
+    }
+
+    answer8 = quiz.Dragon.value;
+    if (answer8 == "Iron"){
+        score = score + 1;
+    }
+
+    answer9 = quiz.Wizard.value;
+    if (answer9 == "Elminster Aumar"){
+        score = score + 1;
+    }
+
+    answer10 = quiz.Level.value;
+    if (answer10 == "20"){
+        score = score + 1;
+    }
+
+    alert ("Well done, your score was..." + score);
+}
+</script>
 
 </html>

@@ -280,7 +280,7 @@ These changes should improve consistency, responsiveness, and overall appearance
 
 - [X] Fix lang and HTML tag
 - [X] Remove duplicate or incorrect CSS tag
-- [] Fix inconsistent alt text for images
+- [X] Fix inconsistent alt text for images
 - [X] Standadise image filenames
 - [X] Improve header consistency
 - [X] Ensure closing tags are present
@@ -290,6 +290,6 @@ These changes should improve consistency, responsiveness, and overall appearance
 - [X] lange
 - [X] metadata
 - [X] no open section for closed section 
-- [] fix alt descriptions
-- [] lower case image files names
+- [X] fix alt descriptions
+- [X] lower case image files names
 - [X] metadata page titles
