@@ -262,9 +262,9 @@ These changes should improve consistency, responsiveness, and overall appearance
 
 - [X] Navigation section
 - [X] File names in navigation
-- [] select
+- [X] select
 - [X] Backstory
-- [] Frequency section
+- [X] Frequency section
 - [X] footer
     - I reviewed this and found that chatgpt made an error and all my sections were correctly closed. Me: 1 Chat: 10000
 

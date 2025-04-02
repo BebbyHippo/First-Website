@@ -136,6 +136,10 @@ ul {
     display: none;
   }
   
+  /* .myDIV:hover {
+    
+  } */
+
   .myDIV:hover + .hide {
     display: block;
     color: red;
@@ -263,7 +267,7 @@ footer {
 /* Quiz submit button */
 .submit_form {
     background-color: #002244; /* Green */
-    border: 10px solid goldenrod; ;
+    border: 10px solid goldenrod;
     color: #F5F5DC;
     padding: 15px 32px;
     text-align: center;
