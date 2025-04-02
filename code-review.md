@@ -270,7 +270,7 @@ These changes should improve consistency, responsiveness, and overall appearance
 
 ### Towns and Cities
 
-- [] Accessibility
+- [?] Accessibility
 - [X] Fixing Nested Lists
 - [X] Enhencing Navigation
 - [X] CSS Styling

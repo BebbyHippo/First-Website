@@ -77,12 +77,37 @@ nav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none; /* Removes underline */
+    text-wrap: nowrap;
 }
 
 ul {
     list-style-type:disc; /* Removes bullet points */
     color: #F5F5DC; /* Default text color for list items */
 }
+
+/* css for alternative nav bar depending on mobile screen dimentsions */
+
+/* @media only screen and (max-width: 600px) {
+    nav {
+
+    }
+
+    nav ul {
+
+    }
+
+    nav li {
+
+    }
+
+    nav li a {
+
+    }
+
+    ul {
+
+    }
+  } */
 
 /* Active navigation link styling */
 #active {
